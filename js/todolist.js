@@ -12,7 +12,9 @@ const listEl = document.querySelector("#list-el");
 //Gives button function to renderList() when button is clicked.
 inputBtn.addEventListener("click", function () {
   myList.push(myInput.value);
-
+  //Clears the input field when button is pressed
+  myInput.value = "";
+  //Renders the new item
   renderList();
 });
 
